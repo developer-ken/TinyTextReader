@@ -51,9 +51,9 @@ CharInfo SDFont::SeekCharUnicode(uint32_t unicode)
         .Address = block->UInt32[1]};
 }
 
-uint8_t *SDFont::ReadFont(CharInfo *c){
-    uint8_t *font = (uint8_t *)malloc(c->Size);
-    fontFile.seek(c->Address);
-    fontFile.read(font, c->Size);
+uint8_t *SDFont::ReadFont(CharInfo c){
+    uint8_t *font = (uint8_t *)malloc(c.Size);
+    fontFile.seek(c.Address);
+    fontFile.read(font, c.Size);
     return font;
 }

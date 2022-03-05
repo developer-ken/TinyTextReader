@@ -31,7 +31,7 @@ public:
     SDFont(const char *filename);
     ~SDFont(void);
     CharInfo SeekCharUnicode(uint32_t unicode);
-    uint8_t *ReadFont(CharInfo *c);
+    uint8_t *ReadFont(CharInfo c);
 private:
     Byte8Block *readBlock();
     File fontFile;
