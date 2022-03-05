@@ -1,0 +1,6 @@
+{
+    "configuration": "pinout=nano_every,resetpin=reset,BOD=1v8,clock=internal_16MHz,bootloader=no_bootloader",
+    "board": "MegaCoreX:megaavr:4809",
+    "port": "COM31",
+    "sketch": "TinyTextReader.ino"
+}
